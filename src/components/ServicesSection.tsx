@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 const services = [
@@ -8,32 +7,32 @@ const services = [
     {
         title: "Cybersecurity",
         description: "In-depth market research and data analysis to identify opportunities and strategies.",
-        image: "/icons/cybersecurity.png"
+        image: "/icons/cybersecurity.PNG"
     },
     {
         title: "Application Developement",
         description: "Custom web applications, to scale and enhance performance.",
-        image: "/icons/coding.png"
+        image: "/icons/coding.PNG"
     },
     {
         title: "Cloud computing",
         description: "Optimized funnels that capture leads and maximize conversion rates.",
-        image: "/icons/cloud.png"
+        image: "/icons/cloud.PNG"
     },
     {
         title: "Project Management",
         description: "Effective planning, execution and delivery of projects tailored to your business goals.",
-        image: "/icons/market.png",
+        image: "/icons/market.PNG",
     },
     {
         title: "Digital Marketing",
         description: "Boost your online visibility and engage with customers through strategic campaigns.",
-        image: "/icons/market-analysis.png"
+        image: "/icons/market-analysis.PNG"
     },
     {
         title: "IT Support",
         description: "Reliable IT support and system setup to keep your business running smoothly.",
-        image: "/icons/network-admin.png"
+        image: "/icons/network-admin.PNG"
     },
     
 

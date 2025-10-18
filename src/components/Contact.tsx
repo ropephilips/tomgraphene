@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { FaEnvelope, FaLinkedinIn , FaMapLocation, FaPhone } from "react-icons/fa6";
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Contact() {
