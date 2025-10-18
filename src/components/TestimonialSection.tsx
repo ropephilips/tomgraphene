@@ -60,7 +60,7 @@ export default function TestimonialSection(){
                    Why leading teams trust Tomgraphene
                  </motion.h2>
                  <div className="relative max-w-5xl mx-auto mb-4 w-full h-40 md:h-60 lg:h-80">
-                    <Image src="/images/testimonial.JP" alt="happy clients" className="object-cover object-center md:object-[center_38%] rounded-2xl" fill priority />
+                    <Image src="/images/testimonial.JPG" alt="happy clients" className="object-cover object-center md:object-[center_38%] rounded-2xl" fill priority />
                  </div>
 
                  <div className="block md:hidden">
