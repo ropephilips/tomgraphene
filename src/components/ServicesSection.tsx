@@ -12,7 +12,7 @@ const services = [
     {
         title: "Application Developement",
         description: "Custom web applications, to scale and enhance performance.",
-        image: "/icons/coding.PNG"
+        image: "/icons/coding.png"
     },
     {
         title: "Cloud computing",
@@ -22,17 +22,17 @@ const services = [
     {
         title: "Project Management",
         description: "Effective planning, execution and delivery of projects tailored to your business goals.",
-        image: "/icons/market.PNG",
+        image: "/icons/market.png",
     },
     {
         title: "Digital Marketing",
         description: "Boost your online visibility and engage with customers through strategic campaigns.",
-        image: "/icons/market-analysis.PNG"
+        image: "/icons/market-analysis.png"
     },
     {
         title: "IT Support",
         description: "Reliable IT support and system setup to keep your business running smoothly.",
-        image: "/icons/network-admin.PNG"
+        image: "/icons/network-admin.png"
     },
     
 
