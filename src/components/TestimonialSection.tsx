@@ -60,7 +60,7 @@ export default function TestimonialSection(){
                    Why leading teams trust Tomgraphene
                  </motion.h2>
                  <div className="relative max-w-5xl mx-auto mb-4 w-full h-40 md:h-60 lg:h-80">
-                    <Image src="/images/testimonial.JPG" alt="happy clients" className="object-cover object-center md:object-[center_38%] rounded-2xl" fill priority />
+                    <Image src="/images/testimonial.JP" alt="happy clients" className="object-cover object-center md:object-[center_38%] rounded-2xl" fill priority />
                  </div>
 
                  <div className="block md:hidden">
@@ -90,7 +90,7 @@ export default function TestimonialSection(){
                                 
                                 <div className="w-full max-w-md mx-auto flex items-center justify-between text-gray-800 rounded-b-2xl mt-4 px-6 py-4">
                                     <div className="flex items-center space-x-3">
-                                        <Image src="/icons/accounting.PNG" alt="image"
+                                        <Image src="/icons/accounting.png" alt="image"
                                         width={48} height={48} className="rounded-full object-cover" priority/>
                                         
                                         <div className="flex-row">
