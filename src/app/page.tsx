@@ -14,8 +14,7 @@ export default function Home() {
       <CTASection/>
       <TestimonialSection/>
       <section id="about"><About/></section> 
-      <section id="portfolio"><PortfolioSection/></section>
-      
+      <section id="portfolio"><PortfolioSection/></section> 
       <section id="contact"><Contact/></section>  
     </main>
   );

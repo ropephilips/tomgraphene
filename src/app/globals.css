@@ -22,17 +22,6 @@
   background-position: center;
 }
 
-
-.clip-card{
-  clip-path:("M0 0H100%V100%H85%Q80%100%80%95%V85%H0Z");
-  border-radius: 1rem;
-  transition: 0.3s ease, clip-path 0.3s ease;
-}
-
-.clip-card:hover {
-  transform: scale(1.03);
-}
-
 .clip-bubble {
   clip-path: path("M0,0 H100% V85% Q100% 100%,85% 100% H0 Z");
   border-radius: 1rem;
