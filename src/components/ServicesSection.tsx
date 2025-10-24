@@ -77,7 +77,7 @@ export default function ServicesSection() {
                   height={300}
                   src={service.image}
                   alt={service.title}
-                  className="w-16 h-16 mb-4 mx-auto"
+                  className="w-16 h-16 mb-4"
                   priority
                 />
                 <h3 className="text-xl font-serif font-semibold mb-2">
