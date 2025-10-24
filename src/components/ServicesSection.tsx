@@ -77,7 +77,7 @@ export default function ServicesSection() {
                   height={300}
                   src={service.image}
                   alt={service.title}
-                  className="w-16 h-16 mb-4"
+                  className="w-16 h-16 mb-4 mx-auto"
                   priority
                 />
                 <h3 className="text-xl font-serif font-semibold mb-2">
@@ -88,7 +88,7 @@ export default function ServicesSection() {
                 </p>
 
                 <p
-                  className="text-xs absolute top-6 right-13 font-semibold tracking-[0.20em] 
+                  className="text-xs absolute top-6 right-13 font-semibold tracking-[0.10em] 
                              opacity-0 group-hover:opacity-100 group-focus:opacity-100 group-active:opacity-100 
                              transition-opacity duration-300"
                 >
