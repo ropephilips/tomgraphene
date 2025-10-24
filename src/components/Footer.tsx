@@ -45,7 +45,8 @@ export default function Footer(){
                         <li><strong>Cloud Computing</strong></li>
                         <li><strong>Cybersecurity</strong></li>
                         <li><strong>Digital Marketing</strong></li>
-                        <li><strong>IT Support</strong></li>
+                        <li><strong>Project Management</strong></li>
+                        <li><strong>IT Support & Consulting</strong></li>
                         
                     </ul>
                 </div>

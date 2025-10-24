@@ -29,7 +29,9 @@ export default function About(){
             </h1>
             <p className="text-xs lg:text-sm text-start font-medium text-gray-800 tracking-wider mb-4"> At <strong>Tomgraphene</strong>, we deliver cutting edge
                technology solutions designed to protect, empower, and transform modern enterprises.
-               Our specialized solutions combine advanced systems to strength your digital resilience.
+               We are a Canada-based IT solutions and technology company providing end-to-end digital transformation services to global clients.
+               Our expertise spans cloud computing, cybersecurity, web applications developement, digital marketing, and project management - helping
+               organizations scale with confidence in a connected world.
             </p>
             <div className="block md:hidden">
                 <Image src="/logo/logoS.PNG" alt="tomgrapehene Logo" width={150} height={100} 
@@ -44,16 +46,16 @@ export default function About(){
             <div className="text-start mb-4 mt-4">
                <h2 className="text-xs lg:text-sm text-gray-700 uppercase tracking-widest mb-2">our mission</h2>
                <p className="text-sm text-gray-800 items-start tracking-tighter ">
-                We believe technology solutions designed to protect, empower, and transform modern enterprises.
-                Our specialized solutions combine advanced systems to strength your digital resilience.
+                To deliver reliable, secure, and innovative digital solutions that empower organizations worldwide to
+                operate smarter, faster, and more efficiently.
                </p>
             </div>
 
             <div className="text-start mb-4">
                <h2 className="text-xs lg:text-sm text-gray-700 uppercase tracking-widest mb-2">our vision</h2>
                <p className="text-sm text-gray-800 items-start tracking-tighter ">
-                We believe technology solutions designed to protect, empower, and transform modern enterprises.
-                Our specialized solutions combine advanced systems to strength your digital resilience.
+                To become a global leader in intelligent IT solutions, helping businesses leverage technology to 
+                drive sustainable growth and digital transformation.
                </p>
             </div>
 

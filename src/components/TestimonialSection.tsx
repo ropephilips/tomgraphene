@@ -9,36 +9,22 @@ import Image from "next/image";
 import { FaStar, FaQuoteRight } from "react-icons/fa";
 
 const testimonial = [
+
     {
-        name: "Toyin",
-        title: "CEO Beauritage Makeup",
-        quote: "This team completely transformed my online presence. Their Social media marketing and online audit was top notch."
-    },
-    {
-        name: "Abdul Ajibola ",
-        title: "CEO Royal Property Solutions Limited",
+        name: "Abdul",
+        title: "CEO, Royal Property Limited",
         quote: "They helped with a marketing campaigns strategy and automated our customer relation that helped us effectively market our projects."
     },
     {
-        name: "Tessy ",
-        title: "CEO, Farra Farms Limited",
+        name: "Sandra ",
+        title: "CEO, Farra Farms",
         quote: "This awesome team built a custom Fish farm management system with automation functions that reduced my expenses, thereby increasing my farm's revenue."
     },
-    // {
-    //     name: "Daniel Obasi",
-    //     title: "Founder, Obasi Logistics",
-    //     quote: "They built a custom application that reduced our manual workload by 60%, Fast, efficient and reliable."
-    // },
-    // {
-    //     name: "Sandra Mia",
-    //     title: "CMO, Sky Digital Agency",
-    //     quote: "Their leads generation strategy doubled our conversations in just 3 weeks. Highly recommend their services."
-    // },
-    // {
-    //     name: "Praise",
-    //     title: "Gold Stores",
-    //     quote: "Built a custom website and helped us with our SEO, making us visible to our local community."
-    // }
+    {
+        name: "Daniel",
+        title: "COO, Libra Logistics",
+        quote: "They built a custom application that reduced our manual workload by 30%, Fast, efficient and reliable."
+    },
 
 ];
 

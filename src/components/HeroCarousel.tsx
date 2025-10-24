@@ -6,7 +6,7 @@ export default function HeroCarousel(){
   const fullText = `At Tomgraphene technology and IT solutions, we design, build, and secure technology ecosystems that help businesses scale with confidence.
                     From cloud computing and cybersecurity to web applications and digital strategy 
                     - we fuse innovation with precision to create your solutions.`;
-  const typingSpeed = 70;
+  const typingSpeed = 100;
 
   useEffect(() => {
     let i = 0;

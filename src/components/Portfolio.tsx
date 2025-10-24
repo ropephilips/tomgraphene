@@ -51,7 +51,7 @@ export default function PortfolioSection(){
             <motion.h2 initial={{opacity: 0, y: 30}}
                 animate={inView ? {opacity: 1, y: 0 } : {}}
                 transition={{duration: 0.6}}
-                className="text-sm md:text-lg lg:text-lg text-black font-serif font-bold mt-4 mb-6 lg:mb-12 tracking-[0.35em]">
+                className="text-sm md:text-lg uppercase lg:text-lg text-black font-serif font-bold mt-4 mb-6 lg:mb-12 tracking-[0.20em]">
                 Some of our projects 
             </motion.h2>
 

@@ -57,7 +57,7 @@ export default function Contact() {
                         
                         <div className="font-serif">
                         <p className="flex items-center gap-3 text-white text-sm space-x-0">
-                            <FaMapLocation className="text-red-600"/> North York, Ontario.
+                            <FaMapLocation className="text-red-600"/> Toronto, Canada.
                         </p>
                         <p className="flex items-center gap-3 text-white text-sm">
                             <FaPhone className="text-green-600"/> +1 365-720-1748
@@ -75,7 +75,7 @@ export default function Contact() {
 
         {/* Right Column: Form */}
         <div className="bg-white p-6 rounded-lg shadow-lg w-full">
-          <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-6 tracking-tighter">Send Us A Message</h3>
+          <h3 className="text-xs md:text-sm text-gray-900 text-start font-semibold uppercase mb-3 tracking-[0.35em]">Send Us A Message</h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               name="name"
@@ -106,7 +106,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-3 rounded text-black font-bold font-serif transition ${
+              className={`w-full py-3 rounded text-black font-bold lowercase transition tracking-[0.35em] ${
                 loading
                   ? "bg-gray-800 cursor-not-allowed"
                   : "bg-gray-200 hover:bg-gray-500 cursor-pointer"
