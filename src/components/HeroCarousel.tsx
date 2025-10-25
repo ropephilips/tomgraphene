@@ -38,11 +38,11 @@ export default function HeroCarousel(){
 
             <div className="mt-6 flex gap-2">
                 <button onClick={() => document.getElementById("contact") ?.scrollIntoView({behavior: "smooth"})} 
-                      className="cursor-pointer bg-orange-400 hover:bg-orange-500 text-white px-5 py-3 rounded-lg font-serif font-semibold">
+                      className="cursor-pointer bg-orange-400 focus:bg-orange-500 hover:bg-orange-500 text-white px-5 py-3 rounded-lg font-serif font-semibold">
                     Get Started
                 </button>
                 <button onClick={() => document.getElementById("services") ?.scrollIntoView({behavior: "smooth"})} 
-                      className="border border-orange-800 font-serif hover:bg-orange-500 hover:text-white text-orange-400 px-5 py-3 rounded-lg font-semibold cursor-pointer">
+                      className="border border-orange-800 font-serif focus:bg-orange-500 hover:bg-orange-500 hover:text-white text-orange-400 px-5 py-3 rounded-lg font-semibold cursor-pointer">
                     Explore Our Solutions
                 </button>
             </div>

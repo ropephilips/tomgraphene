@@ -36,7 +36,7 @@ export default function Pm(){
                         
                           <div className="flex justify-start gap-4 mb-6">
                           <button onClick={() => setShowModal(true)}
-                            className="px-6 py-2 bg-gray-700 cursor-pointer text-white md:tracking-[0.25em] rounded-full hover:bg-gray-900 transition"
+                            className="px-6 py-2 bg-gray-700 cursor-pointer text-white md:tracking-[0.25em] rounded-full hover:bg-gray-900 focus:bg-gray-900 transition"
                           >
                             Get Started
                           </button>
@@ -77,19 +77,19 @@ export default function Pm(){
                                   {[
                                     {
                                       title: "IT project planning and execution",
-                                      desc: "Seamless transition to AWS, Google Cloud, or Microsoft Azure.",
+                                      desc: "Strategic management that ensures timely and successful project delivery.",
                                     },
                                     {
                                       title: "Agile and Scrum project management",
-                                      desc: "Integrate private and public clouds for maximum flexibility.",
+                                      desc: "Flexible, iterative approach that accelerates development and collaboration..",
                                     },
                                     {
                                       title: "Digital transformation strategy",
-                                      desc: "Accelerate development cycles with CI/CD and automation.",
+                                      desc: "Modernize systems and processes with tailored transformation roadmaps.",
                                     },
                                     {
                                       title: "Process automation consulting",
-                                      desc: "Reliable, secure storage with disaster recovery and redundancy.",
+                                      desc: "Optimize operations through intelligent workflow automation.",
                                     },
                         
                                   ].map((item, index) => (
@@ -131,12 +131,12 @@ export default function Pm(){
                                     <p className="text-xs text-orange-50 mb-3 uppercase animate-blink leading-tight">🙋‍ Ready to elevate your business?</p>
                                     <a href="/contact"
                                         className="cursor-pointer bg-auto-400 shadow-gray-400 font-bold py-2 px-4 
-                                        rounded-lg shadow-md text-white hover:bg-orange-400 transition duration-300">
+                                        rounded-lg shadow-md text-white hover:bg-orange-400 focus:bg-orange-400 transition duration-300">
                                            Drop us a message
                                     </a>
                               </div>
 
-                                <p className="text-center font-bold font-serif mt-4 md:mt-6 uppercase text-gray-900 tracking-[0.45em]">
+                                <p className="text-center font-bold font-serif mt-4 md:mt-6 text-sm md:text-lg px-2 uppercase text-gray-900 tracking-[0.40em]">
                                      plan, manage, and deliver - with precision and purpose.
                                  </p>
           <SupportModal isOpen={showModal} onClose={() => setShowModal(false)} />

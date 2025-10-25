@@ -65,7 +65,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Link href={service.link} key={index}>
               <div
-                tabIndex={0} // 👈 makes card focusable (mobile "tap" support)
+                tabIndex={0} 
                 className="relative group clip-bubble bg-white/45 rounded-lg shadow-md p-5 
                            hover:shadow-xl hover:bg-orange-200 hover:scale-105
                            focus:shadow-xl focus:bg-orange-200 focus:scale-105

@@ -35,7 +35,7 @@ export default function CTASection(){
             </h2>
             <button onClick={scrollToContact}
                 className="cursor-pointer mt-4 bg-auto-400 shadow-gray-400 font-bold py-2 px-4 
-                rounded-lg shadow-md text-white hover:bg-orange-400 transition duration-300">
+                rounded-lg shadow-md text-white hover:bg-orange-400 focus:bg-orange-400 transition duration-300">
                    Drop us a message
             </button>
         </div>

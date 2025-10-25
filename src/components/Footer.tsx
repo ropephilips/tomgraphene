@@ -2,7 +2,7 @@
 import Image from "next/image";
 
 import Link from "next/link";
-import { FaSquareXTwitter, FaLinkedin , FaEnvelopeOpenText, FaWhatsapp, FaFacebook} from "react-icons/fa6";
+import { FaSquareXTwitter, FaLinkedin , FaEnvelopeOpenText, FaWhatsapp, FaFacebook, FaInstagram} from "react-icons/fa6";
 export default function Footer(){
     // const scrollToHome = () => {
     //     document.getElementById("home")?.scrollIntoView({behavior: "smooth"});
@@ -28,7 +28,7 @@ export default function Footer(){
                             <input type="email" name="email" placeholder="Email address..." required 
                               className="w-full text-sm text-white border border-orange-400 rounded-lg p-2 focus:outline-none focus:ring-orange-500" />
                             <button type="submit" 
-                              className="w-full font-serif rounded-lg bg-orange-400 hover:bg-amber-400 cursor-pointer mt-2 text-black">
+                              className="w-full font-serif rounded-lg bg-orange-400 hover:bg-amber-400 focus:bg-amber-400 cursor-pointer mt-2 text-black">
                                Subscribe
                             </button>
                         </form>
@@ -76,8 +76,8 @@ export default function Footer(){
                         <ul className="flex space-x-2">
                             <li><Link href="#"><FaSquareXTwitter className="hover:text-gray-500 transition-transform transform hover:scale-110"/></Link></li>
                             <li><Link href="#"><FaLinkedin className="hover:text-blue-700 transition-transform transform hover:scale-110"/></Link></li>
-                            <li><Link href="#"><FaFacebook className="hover:text-blue-700 transition-transform transform hover:scale-110"/></Link></li>
-                            <li><Link href="#"><FaWhatsapp className="hover:text-green-800 transition-transform transform hover:scale-110"/></Link></li>
+                            <li><Link href=""><FaInstagram className="bg-clip-text hover:bg-gradient-to-tr from-yellow-400
+                             via-pink-500 to-purple-500"/></Link></li>
                         </ul>
                     </div>
                 </div>

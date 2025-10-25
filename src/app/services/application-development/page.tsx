@@ -35,7 +35,7 @@ export default function web_app(){
         
                 <div className="flex justify-start gap-4 mb-6">
                   <button onClick={() => setShowModal(true)}
-                    className="px-6 py-2 bg-gray-700 cursor-pointer text-white md:tracking-[0.25em] rounded-full hover:bg-gray-900 transition">
+                    className="px-6 py-2 bg-gray-700 cursor-pointer text-white md:tracking-[0.25em] rounded-full hover:bg-gray-900 focus:bg-gray-900 transition">
                       Get Started
                   </button>
                 </div>
@@ -75,19 +75,19 @@ export default function web_app(){
                   {[
                     {
                       title: "Corporate and enterprise web platforms",
-                      desc: "Seamless transition to AWS, Google Cloud, or Microsoft Azure.",
+                      desc: "Scalable, secure, and high-performing platforms built for business growth.",
                     },
                     {
                       title: "E-commerce and booking systems",
-                      desc: "Integrate private and public clouds for maximum flexibility.",
+                      desc: "Custom platforms that simplify transactions and boost online sales.",
                     },
                     {
                       title: "Progressive Web Apps (PWAs)",
-                      desc: "Accelerate development cycles with CI/CD and automation.",
+                      desc: "Fast, responsive web apps with native mobile experience and offline access.",
                     },
                     {
                       title: "SaaS applications and APIs",
-                      desc: "Reliable, secure storage with disaster recovery and redundancy.",
+                      desc: "Reliable cloud-based software and API solutions for scalable digital operations.",
                     },
                   ].map((item, index) => (
                     <div
@@ -128,12 +128,12 @@ export default function web_app(){
                                     <p className="text-xs text-orange-50 mb-3 uppercase animate-blink leading-tight">🙋‍ Ready to elevate your business?</p>
                                     <a href="/contact"
                                         className="cursor-pointer bg-auto-400 shadow-gray-400 font-bold py-2 px-4 
-                                        rounded-lg shadow-md text-white hover:bg-orange-400 transition duration-300">
+                                        rounded-lg shadow-md text-white hover:bg-orange-400 focus:bg-orange-400 transition duration-300">
                                            Drop us a message
                                     </a>
                               </div>
 
-                                <p className="text-center font-bold font-serif px-2 mt-4 md:mt-6 uppercase text-gray-900 tracking-[0.45em]">
+                                <p className="text-center text-sm md:text-lg px-2 font-bold font-serif mt-4 md:mt-6 uppercase text-gray-900 tracking-[0.40em]">
                                    From concept to code - we bring your digital ideals to life
                                  </p>
 

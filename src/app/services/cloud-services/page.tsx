@@ -38,7 +38,7 @@ export default function cloud(){
 
         <div className="flex justify-start gap-4 mb-6">
          <button onClick={() => setShowModal(true)}
-           className="px-6 py-2 bg-gray-700 cursor-pointer text-white md:tracking-[0.25em] rounded-full hover:bg-gray-900 transition">
+           className="px-6 py-2 bg-gray-700 cursor-pointer text-white md:tracking-[0.25em] rounded-full hover:bg-gray-900 focus:bg-gray-900 transition">
             Get Started
             </button>
         </div>
@@ -131,12 +131,12 @@ export default function cloud(){
                                     <p className="text-xs text-orange-50 mb-3 uppercase animate-blink leading-tight">🙋‍ Ready to elevate your business?</p>
                                     <a href="/contact"
                                         className="cursor-pointer bg-auto-400 shadow-gray-400 font-bold py-2 px-4 
-                                        rounded-lg shadow-md text-white hover:bg-orange-400 transition duration-300">
+                                        rounded-lg shadow-md text-white hover:bg-orange-400 focus:bg-orange-400 transition duration-300">
                                            Drop us a message
                                     </a>
                               </div>
 
-                                <p className="text-center font-bold font-serif mt-4 md:mt-6 uppercase text-gray-900 tracking-[0.45em]">
+                                <p className="text-center font-bold font-serif mt-4 md:mt-6 text-sm md:text-lg px-2 uppercase text-gray-900 tracking-[0.40em]">
                                    Let us help unlock the full power of the cloud
                                  </p>
 

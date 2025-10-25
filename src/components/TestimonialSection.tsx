@@ -13,17 +13,20 @@ const testimonial = [
     {
         name: "Abdul",
         title: "CEO, Royal Property Limited",
+        img: "/icons/male.PNG",
         quote: "They helped with a marketing campaigns strategy and automated our customer relation that helped us effectively market our projects."
     },
     {
         name: "Sandra ",
         title: "CEO, Farra Farms",
+        img: "/icons/female.PNG",
         quote: "This awesome team built a custom Fish farm management system with automation functions that reduced my expenses, thereby increasing my farm's revenue."
     },
     {
         name: "Daniel",
         title: "COO, Libra Logistics",
-        quote: "They built a custom application that reduced our manual workload by 30%, Fast, efficient and reliable."
+        quote: "They built a custom application that reduced our manual workload by 30%, Fast, efficient and reliable.",
+        img: "/icons/male.PNG",
     },
 
 ];
@@ -76,7 +79,7 @@ export default function TestimonialSection(){
                                 
                                 <div className="w-full max-w-md mx-auto flex items-center justify-between text-gray-800 rounded-b-2xl mt-4 px-6 py-4">
                                     <div className="flex items-center space-x-3">
-                                        <Image src="/icons/accounting.png" alt="image"
+                                        <Image src={item.img} alt="image"
                                         width={48} height={48} className="rounded-full object-cover" priority/>
                                         
                                         <div className="flex-row">

@@ -124,7 +124,7 @@ export default function Navbar(){
                 {links.map((link) => (
                     <button key={link} onClick={(e) => handleNavClick(e ,link)}
                       className="text-start py-0 px-0 text-sm text-black tracking-widest 
-                      rounded hover:text-orange-500 cursor-pointer">
+                      rounded hover:text-orange-500 focus:text-orange-500 cursor-pointer">
                        {link.charAt(0).toUpperCase() + link.slice(1)}
                     </button>
                 ))}

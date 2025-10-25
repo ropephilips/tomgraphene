@@ -29,7 +29,7 @@ export default function GotoTop(){
           {isVisible && (
             <button onClick={scrollToTop} 
             className="fixed bottom-5 right-5 z-50 bg-orange-600 text-white p-2 rounded-full 
-            shadow-lg hover:bg-orange-700 transition-all sm:buttom-8 sm:right-8">
+            shadow-lg hover:bg-orange-700 focus:bg-orange-700 transition-all sm:buttom-8 sm:right-8">
                 <FaArrowUp className="text-lg sm:xl md:text-2xl lg:text-2xl"/>
             </button>
           )}

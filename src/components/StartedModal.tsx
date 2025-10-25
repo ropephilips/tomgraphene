@@ -51,7 +51,7 @@ export default function SupportModal({ isOpen, onClose }: SupportModalProps) {
     setStatus("idle");
 
     const payload = {
-      access_key: "YOUR-WEB3FORMS-ACCESS-KEY", // Replace with your actual key
+      access_key: "3ebd7a6b-b627-4958-92e4-1531e1d3b0c6",
       subject: `Support Request - ${pageName} | Tomgraphene`,
       from_name: formData.name,
       from_title: formData.title,
@@ -196,7 +196,7 @@ export default function SupportModal({ isOpen, onClose }: SupportModalProps) {
               type="submit"
               disabled={loading}
               className={`w-full bg-gray-500 text-white font-medium rounded-md py-2 transition ${
-                loading ? "opacity-70 cursor-not-allowed" : "hover:bg-gray-700"
+                loading ? "opacity-70 cursor-not-allowed" : "hover:bg-gray-700 focus:bg-gray-700" 
               }`}
             >
               {loading ? "Submitting..." : "Submit"}
