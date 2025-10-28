@@ -107,7 +107,7 @@ export default function SupportModal({ isOpen, onClose }: SupportModalProps) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-4 text-red-500 hover:text-gray-700 text-2xl"
+          className="absolute top-3 right-4 text-red-500 hover:text-gray-700 hover:cursor-pointer text-2xl"
         >
           &times;
         </button>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tomgraphene.com
+
+# Sitemaps
+Sitemap: https://tomgraphene.com/sitemap.xml

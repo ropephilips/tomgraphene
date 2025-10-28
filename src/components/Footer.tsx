@@ -74,9 +74,9 @@ export default function Footer(){
                     <h4 className="mb-2 text-sm">Connect with us</h4>
                     <div>
                         <ul className="flex space-x-2">
-                            <li><Link href="#"><FaSquareXTwitter className="hover:text-gray-500 transition-transform transform hover:scale-110"/></Link></li>
-                            <li><Link href="#"><FaLinkedin className="hover:text-blue-700 transition-transform transform hover:scale-110"/></Link></li>
-                            <li><Link href=""><FaInstagram className="bg-clip-text hover:bg-gradient-to-tr from-yellow-400
+                            <li><Link href="https://x.com/tomgraphene" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter className="hover:text-gray-500 transition-transform transform hover:scale-110"/></Link></li>
+                            <li><Link href="https://linkedin.com/company/tomgraphene/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="hover:text-blue-700 transition-transform transform hover:scale-110"/></Link></li>
+                            <li><Link href="https://instagram.com/tomgraphene/" target="_blank" rel="noopener noreferrer"><FaInstagram className="bg-clip-text hover:bg-gradient-to-tr from-yellow-400
                              via-pink-500 to-purple-500"/></Link></li>
                         </ul>
                     </div>

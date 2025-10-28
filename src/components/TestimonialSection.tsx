@@ -42,12 +42,12 @@ export default function TestimonialSection(){
                 <span className=" tracking-[0.35em] bg-gray-200 text-orange-500 px-2 py-2 rounded-lg text-sm font-medium uppercase">
                    Testimonials
                 </span>
-                <motion.h2 initial={{opacity: 0, y: 30}}
+                <motion.h1 initial={{opacity: 0, y: 30}}
                  animate={inView ? {opacity: 1, y: 0 } : {}}
                  transition={{duration: 0.6}}
                  className="text-sm md:text-lg lg:text-lg text-black font-serif font-bold mt-4 mb-8 lg:mb-12 tracking-widest">
                    Why leading teams trust Tomgraphene
-                 </motion.h2>
+                 </motion.h1>
                  <div className="relative max-w-5xl mx-auto mb-4 w-full h-40 md:h-60 lg:h-80">
                     <Image src="/images/testimonial.JPG" alt="happy clients" className="object-cover object-center md:object-[center_38%] rounded-2xl" fill priority />
                  </div>
