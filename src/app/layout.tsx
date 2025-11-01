@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
 import GotoTop from "@/components/GoToTop";
 import Script from "next/script";
+import Head from "next/head";
+
 
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
@@ -18,36 +20,48 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
 
     return (
       <html lang="en">
-       <head>
-        <title>Tomgraphene | Digital Innovation & Tech Solutions</title>
-        <meta name="description" content="We build scalable web platforms, SaaS, cloud computing and cybersecurity solutions for modern enterprises."/>
-        <meta name="keywords" content="web development, SaaS development, cybersecurity, cloud migration, digital marketing agency, Tomgraphene"/>
-        <meta property="og:title" content="Tomgraphene - Innovative web & Tech Soluyions"/>
-        <meta property="og:description" content="Empowering global businesses with cutting-edge web applications, APIs, and cybersecurity systems. "/>
-        <meta property="og:url" content="https://tomgraphene.com"/>
-        <meta property="og:image" content="https://tomgraphene.com/og-image.jpg"/>
-        <meta property="og:type" content="website"/>
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:site" content="@tomgraphene"/>
-        <meta name="twitter:creator" content="@tomgraphene" />
-        {/* JSON-LD Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Tomgraphene",
-              url: "https://tomgraphene.com",
-              logo: "https://tomgraphene.com/logoL.PNG",
-              sameAs: [
-                "https://linkedin.com/company/tomgraphene",
-                "https://twitter.com/tomgraphene",
-              ],
-            }),
-          }}
-        />
-      </head>
+<Head>
+  <title>Tomgraphene | Digital Innovation & Tech Solutions</title>
+  <meta
+    name="description"
+    content="We build scalable web platforms, SaaS, cloud computing and cybersecurity solutions for modern enterprises."
+  />
+  <meta
+    name="keywords"
+    content="web development, SaaS development, cybersecurity, cloud migration, digital marketing agency, Tomgraphene"
+  />
+  <meta property="og:title" content="Tomgraphene - Innovative Web & Tech Solutions" />
+  <meta
+    property="og:description"
+    content="Empowering global businesses with cutting-edge web applications, APIs, and cybersecurity systems."
+  />
+  <meta property="og:url" content="https://tomgraphene.com" />
+  <meta property="og:image" content="https://tomgraphene.com/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tomgraphene" />
+  <meta name="twitter:creator" content="@tomgraphene" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://tomgraphene.com/" />
+
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Tomgraphene",
+        url: "https://tomgraphene.com",
+        logo: "https://tomgraphene.com/logoL.PNG",
+        sameAs: [
+          "https://linkedin.com/company/tomgraphene",
+          "https://twitter.com/tomgraphene",
+        ],
+      }),
+    }}
+  />
+</Head>
+
       <body className="antialiased">
         <Script async
           src="https://www.googletagmanager.com/gtag/js?id=G-LJYF719KGF"
