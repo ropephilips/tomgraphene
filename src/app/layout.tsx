@@ -36,7 +36,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
     content="Empowering global businesses with cutting-edge web applications, APIs, and cybersecurity systems."
   />
   <meta property="og:url" content="https://tomgraphene.com" />
-  <meta property="og:image" content="https://tomgraphene.com/og-image.JPG" />
+  <meta property="og:image" content="https://tomgraphene.com/og-image.jpg" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@tomgraphene" />
