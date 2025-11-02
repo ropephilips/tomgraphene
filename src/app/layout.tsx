@@ -36,12 +36,13 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
     content="Empowering global businesses with cutting-edge web applications, APIs, and cybersecurity systems."
   />
   <meta property="og:url" content="https://tomgraphene.com" />
-  <meta property="og:image" content="https://tomgraphene.com/og-image.jpg" />
+  <meta property="og:image" content="https://tomgraphene.com/og-image.JPG" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@tomgraphene" />
   <meta name="twitter:creator" content="@tomgraphene" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="short icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="canonical" href="https://tomgraphene.com/" />
 
   <script
@@ -52,7 +53,7 @@ export default function RootLayout({children}: Readonly<{children: React.ReactNo
         "@type": "Organization",
         name: "Tomgraphene",
         url: "https://tomgraphene.com",
-        logo: "https://tomgraphene.com/logoL.PNG",
+        logo: "https://tomgraphene.com/logo.JPG",
         sameAs: [
           "https://linkedin.com/company/tomgraphene",
           "https://twitter.com/tomgraphene",
