@@ -1,42 +1,58 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { FaEnvelope, FaLinkedinIn, FaMapLocation, FaPhone } from "react-icons/fa6";
 import Image from "next/image";
-import Script from "next/script";
+import { useRef } from "react";
+// import Script from "next/script";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
-  const [theme, setTheme] = useState<"light" | "dark">("light");
   const [status, setStatus] = useState("");
-
-  // 🌗 Detect system or page theme and apply Turnstile theme
-  useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-
-    const listener = (e: MediaQueryListEvent) => {
-      setTheme(e.matches ? "dark" : "light");
-    };
-
-    const mq = window.matchMedia("(prefers-color-scheme: dark)");
-    mq.addEventListener("change", listener);
-
-    return () => mq.removeEventListener("change", listener);
-  }, []);
+  const startedAtRef = useRef<number | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setStatus("");
 
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    //honeypot
+    if (formData.get("company")){
+      setLoading(false);
+      return;
+    }
+
+    if (!startedAtRef.current){
+      toast.error("Please fill the form properly");
+      return;
+    }
+
+    const elapsed = Date.now() - startedAtRef.current;
+
+    if (elapsed < 2000){
+      toast.error("Submission rejected");
+      return;
+    }
+
+    //content spam check 
+    const message = formData.get("message")?.toString().toLowerCase() || "";
+    const spamWords = ["crypto", "loan", "forex", "investment"];
+
+    if (spamWords.some(w => message.includes(w))){
+      toast.error("Message blocked");
+      setLoading(false);
+      return;
+    }
+
+    if (formData.get("company")){
+      return;
+    }
 
     try {
-      const response = await fetch("https://submit-form.com/8x2tUbBpY", {
+      const response = await fetch("https://formspree.io/f/mdaaazaq", {
         method: "POST",
         body: formData,
         headers: { Accept: "application/json" },
@@ -44,7 +60,7 @@ export default function Contact() {
 
       if (response.ok) {
         toast.success("Message sent successfully!");
-        e.currentTarget.reset();
+        form.reset();
       } else {
         toast.error("Something went wrong. Please try again.");
       }
@@ -57,9 +73,6 @@ export default function Contact() {
 
   return (
     <>
-      {/* ✅ Cloudflare Turnstile Script */}
-      <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
-
       <section id="contact" className="scroll-mt-24 py-6 lg:py-20 bg-gray-50 text-black">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
 
@@ -104,7 +117,24 @@ export default function Contact() {
               Send Us A Message
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form 
+              onFocus={() => {
+                if (!startedAtRef.current){
+                  startedAtRef.current = Date.now();
+                }
+              }}
+            
+              onSubmit={handleSubmit} className="space-y-4">
+
+              <input 
+                type="text"
+                name="company"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                style={{position: "absolute", left: "-9999px" }}
+                />
+            
               <input
                 name="name"
                 placeholder="Your Name"
@@ -131,15 +161,6 @@ export default function Contact() {
                 required
                 className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-gray-500"
               />
-
-              {/* ✅ Cloudflare Turnstile Widget (Auto theme) */}
-              <div className="flex justify-center items-center">
-                <div
-                  className="cf-turnstile rounded-md border border-gray-200 bg-gray-50 p-2"
-                  data-sitekey="0x4AAAAAAB8kWP2bi0jnWpAj"
-                  data-theme={theme}
-                ></div>
-              </div>
 
               <button
                 type="submit"

@@ -92,6 +92,10 @@ export default function cybersecurity(){
                               title: "Managed security monitoring (SOC)",
                               desc: "24/7 monitoring and rapid incident response for total peace of mind.",
                             },
+                            {
+                              title:"Patch management and updates",
+                              desc: "Close security vulnerabilities and prevent system crash."
+                            }
                           ].map((item, index) => (
                             <div
                               key={index}
